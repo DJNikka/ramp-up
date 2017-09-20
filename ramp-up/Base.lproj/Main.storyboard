@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,12 +13,25 @@
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="RampPlacerVC" customModule="ramp_up" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                    <view key="view" contentMode="scaleToFill" id="P77-HO-0HK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icm-mP-5xl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="icm-mP-5xl" firstAttribute="top" secondItem="Yb1-ic-ZUM" secondAttribute="top" id="QpS-WV-6pa"/>
+                            <constraint firstItem="icm-mP-5xl" firstAttribute="leading" secondItem="Yb1-ic-ZUM" secondAttribute="leading" id="Vu7-pF-lDj"/>
+                            <constraint firstItem="Yb1-ic-ZUM" firstAttribute="trailing" secondItem="icm-mP-5xl" secondAttribute="trailing" id="bu6-qD-Wef"/>
+                            <constraint firstItem="Yb1-ic-ZUM" firstAttribute="bottom" secondItem="icm-mP-5xl" secondAttribute="bottom" id="ube-Wl-s89"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yb1-ic-ZUM"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sceneView" destination="icm-mP-5xl" id="NVC-kE-0gx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

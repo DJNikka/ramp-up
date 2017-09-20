@@ -56,10 +56,10 @@
 		633E5AB51F723D460090094C /* ramp-up */ = {
 			isa = PBXGroup;
 			children = (
+				633E5ACB1F723EBF0090094C /* Model */,
 				633E5ACA1F723E210090094C /* Controller */,
 				633E5AB61F723D470090094C /* AppDelegate.swift */,
 				633E5AB81F723D480090094C /* art.scnassets */,
-				633E5ABA1F723D490090094C /* RampPlacerVC.swift */,
 				633E5ABC1F723D490090094C /* Main.storyboard */,
 				633E5ABF1F723D490090094C /* Assets.xcassets */,
 				633E5AC11F723D490090094C /* LaunchScreen.storyboard */,
@@ -71,8 +71,16 @@
 		633E5ACA1F723E210090094C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				633E5ABA1F723D490090094C /* RampPlacerVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		633E5ACB1F723EBF0090094C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
