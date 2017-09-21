@@ -20,12 +20,21 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icm-mP-5xl">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUX-G4-xOS">
+                                <rect key="frame" x="248" y="576" width="107" height="71"/>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="onRampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="DN0-MX-ZqT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="icm-mP-5xl" firstAttribute="top" secondItem="Yb1-ic-ZUM" secondAttribute="top" id="QpS-WV-6pa"/>
                             <constraint firstItem="icm-mP-5xl" firstAttribute="leading" secondItem="Yb1-ic-ZUM" secondAttribute="leading" id="Vu7-pF-lDj"/>
                             <constraint firstItem="Yb1-ic-ZUM" firstAttribute="trailing" secondItem="icm-mP-5xl" secondAttribute="trailing" id="bu6-qD-Wef"/>
+                            <constraint firstItem="Yb1-ic-ZUM" firstAttribute="bottom" secondItem="eUX-G4-xOS" secondAttribute="bottom" constant="20" id="dlO-UZ-PGp"/>
+                            <constraint firstItem="Yb1-ic-ZUM" firstAttribute="trailing" secondItem="eUX-G4-xOS" secondAttribute="trailing" constant="20" id="sdB-KS-PBF"/>
                             <constraint firstItem="Yb1-ic-ZUM" firstAttribute="bottom" secondItem="icm-mP-5xl" secondAttribute="bottom" id="ube-Wl-s89"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yb1-ic-ZUM"/>
@@ -38,4 +47,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
