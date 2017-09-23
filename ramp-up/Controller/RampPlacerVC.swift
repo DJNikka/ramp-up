@@ -12,8 +12,11 @@ import ARKit
 
 class RampPlacerVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationControllerDelegate {
 
+   
     @IBOutlet var sceneView: ARSCNView!
-    var selectedRamp: String?
+    @IBOutlet weak var controls: UIStackView!
+    var selectedRampName: String?
+    var selectedRamp: SCNNode?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +28,8 @@ class RampPlacerVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationCo
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/pyramid.dae")!
+        let scene = SCNScene(named: "art.scnassets/main.scn")!
+        sceneView.autoenablesDefaultLighting = true
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -110,12 +114,13 @@ class RampPlacerVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationCo
     
     func onRampSelected(_ rampName: String) {
         
-        selectedRamp = rampName
+        selectedRampName = rampName
     }
 
     func placeRamp(position: SCNVector3) {
-        if let rampName = selectedRamp {
+        if let rampName = selectedRampName {
             let ramp = Ramp.getRampForName(rampName: rampName)
+            selectedRamp = ramp
             ramp.position = position
             ramp.scale = SCNVector3(0.01, 0.01, 0.01)
             sceneView.scene.rootNode.addChildNode(ramp)

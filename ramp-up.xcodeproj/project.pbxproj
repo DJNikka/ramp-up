@@ -13,6 +13,7 @@
 		633E5ABE1F723D490090094C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633E5ABC1F723D490090094C /* Main.storyboard */; };
 		633E5AC01F723D490090094C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633E5ABF1F723D490090094C /* Assets.xcassets */; };
 		633E5AC31F723D490090094C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633E5AC11F723D490090094C /* LaunchScreen.storyboard */; };
+		6342C8311F764E2200A984BF /* main.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6342C8301F764E2200A984BF /* main.scn */; };
 		6353E2251F73918D00B1C0FF /* RampPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6353E2241F73918C00B1C0FF /* RampPickerVC.swift */; };
 		6353E2291F73970D00B1C0FF /* ramps.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6353E2281F73970D00B1C0FF /* ramps.scn */; };
 		635BA7D61F760D26008D7D47 /* Ramp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BA7D51F760D26008D7D47 /* Ramp.swift */; };
@@ -27,6 +28,7 @@
 		633E5ABF1F723D490090094C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633E5AC21F723D490090094C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		633E5AC41F723D490090094C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6342C8301F764E2200A984BF /* main.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = main.scn; path = art.scnassets/main.scn; sourceTree = "<group>"; };
 		6353E2241F73918C00B1C0FF /* RampPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerVC.swift; sourceTree = "<group>"; };
 		6353E2281F73970D00B1C0FF /* ramps.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ramps.scn; path = art.scnassets/ramps.scn; sourceTree = "<group>"; };
 		635BA7D51F760D26008D7D47 /* Ramp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramp.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				633E5AC11F723D490090094C /* LaunchScreen.storyboard */,
 				633E5AC41F723D490090094C /* Info.plist */,
 				6353E2281F73970D00B1C0FF /* ramps.scn */,
+				6342C8301F764E2200A984BF /* main.scn */,
 			);
 			path = "ramp-up";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				633E5AC01F723D490090094C /* Assets.xcassets in Resources */,
 				633E5ABE1F723D490090094C /* Main.storyboard in Resources */,
 				6353E2291F73970D00B1C0FF /* ramps.scn in Resources */,
+				6342C8311F764E2200A984BF /* main.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
