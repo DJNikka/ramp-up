@@ -130,8 +130,6 @@ class RampPlacerVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationCo
         
     }
     
-
-    
     func onRampSelected(_ rampName: String) {
         
         selectedRampName = rampName
@@ -147,7 +145,6 @@ class RampPlacerVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationCo
             
             controls.isHidden = false
 
-    
     }
     
 }
